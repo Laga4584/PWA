@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+  <!-- 뷰포트, 파비콘 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+   
+    <title>소설모아</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script>
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="">소설모아</a></div>
+        <div class="search"></div>
+        <div class="favorites"><a href="">즐겨찾기</a></div>
+    </header>
+    <main>
+        <section class="category">
+            <ul>
+                <li class="ctg_f"><a href="">판타지</a></li>
+                <li class="ctg_mf"><a href="">현판</a></li>
+                <li class="ctg_of"><a href="">무협</a></li>
+                <li class="ctg_rf"><a href="">로판</a></li>
+                <li class="ctg_r"><a href="">로맨스</a></li>
+            </ul>
+        </section>
+        <section class="menu">
+            <ul>
+                <li class="menu_genre"><a href="">장르별</a></li>
+                <li class="menu_keyword"><a href="">키워드별</a></li>
+                <li class="menu_new"><a href="">신규</a></li>
+                <li class="menu_popular"><a href="">인기</a></li>
+            </ul>
+        </section>
+        <section class="recommend">
+            <ul>
+                <div class="wrap_1">
+                <li class="recommend_1"><a href=""></a></li>
+                <li class="recommend_1"><a href=""></a></li>
+                <li class="recommend_1"><a href=""></a></li>
+                </div>
+                <div class="wrap_2">
+                <li class="recommend_1"><a href=""></a></li>
+                <li class="recommend_1"><a href=""></a></li>
+                <li class="recommend_1"><a href=""></a></li>
+                </div>
+                <div class="wrap_3">
+                <li class="recommend_1"><a href=""></a></li>
+                <li class="recommend_1"><a href=""></a></li>
+                <li class="recommend_1"><a href=""></a></li>
+                </div>
+            </ul>
+        </section>
+    
+    </main>
+    <section class="bnb">
+        <ul>
+            <li class="bnb_novel"><a href="">소설</a></li>
+            <li class="bnb_review"><a href="">리뷰</a></li>
+            <li class="bnb_mypage"><a href="">마이페이지</a></li>
+        </ul>
+    </section>
+    <!-- 서비스 워커 등록 -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('./service_worker.js')
+        .then(function () {
+          console.log('서비스 워커가 등록됨!');
+        })
+    }
+  </script>
+</body>
+</html>
