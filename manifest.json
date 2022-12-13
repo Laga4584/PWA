@@ -1,7 +1,7 @@
 {
-     "name" : "Hello, PWA",
-     "short_name" : "PWA",
-     "description" : "start for PWA",
+     "name" : "소설모아",
+     "short_name" : "소설모아",
+     "description" : "소설모아",
      "scope" : ".",
      "start_url" : "./",
      "display" : "fullscreen",
